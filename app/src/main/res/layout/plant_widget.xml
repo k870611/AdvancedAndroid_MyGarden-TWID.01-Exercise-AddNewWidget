@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TODO (2): Create a plant_widget.xml file that contains an ImageView defaulting to @drawable/grass -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!-- TODO (6): Add an ImageView that displays water_drop_blue to act as the watering button -->
+<ImageView
+    android:id="@+id/widget_water_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/water_drop_blue" />
+
+<ImageView
+    android:id="@+id/widget_plant_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:src="@drawable/grass" />
+
+
+<!-- TODO (17) Add a new TextView in plant_widget and set it to show the plant ID -->
+    <TextView
+    android:id="@+id/widget_plant_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:layout_gravity="center_horizontal"
+    android:textStyle="bold"
+    android:textSize="32sp"
+    tools:text="123" />
+</LinearLayout>
